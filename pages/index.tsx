@@ -57,13 +57,15 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
               </span>
               <span className="absolute left-0 right-0 bottom-0 h-[400px] bg-gradient-to-b from-black/0 via-black to-black"></span>
             </div>
-            <Logo />
-            <h1 className="mt-8 mb-4 text-base font-bold uppercase tracking-widest">
-              2022 Event Photos
+            
+            <h1 className="mt-8 mb-4 text-xl sm:text-2xl tracking-widest font-serif">
+              Dianella
+            </h1>
+            <h1 className="mt-8 mb-4 text-xl font-bold uppercase tracking-widest">
+              2023 Clases de arte
             </h1>
             <p className="max-w-[40ch] text-white/75 sm:max-w-[32ch]">
-              Our incredible Next.js community got together in San Francisco for
-              our first ever in-person conference!
+              Un increíble tour a través del diseño y creatividad de mis alumnos
             </p>
             <a
               className="pointer z-10 mt-6 rounded-lg border border-white bg-white px-3 py-2 text-sm font-semibold text-black transition hover:bg-white/10 hover:text-white md:mt-4"
@@ -101,36 +103,38 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
           ))}
         </div>
       </main>
-      <footer className="p-6 text-center text-white/80 sm:p-12">
-        Thank you to{' '}
-        <a
-          href="https://edelsonphotography.com/"
-          target="_blank"
-          className="font-semibold hover:text-white"
-          rel="noreferrer"
-        >
-          Josh Edelson
-        </a>
-        ,{' '}
-        <a
-          href="https://www.newrevmedia.com/"
-          target="_blank"
-          className="font-semibold hover:text-white"
-          rel="noreferrer"
-        >
-          Jenny Morgan
-        </a>
-        , and{' '}
-        <a
-          href="https://www.garysextonphotography.com/"
-          target="_blank"
-          className="font-semibold hover:text-white"
-          rel="noreferrer"
-        >
-          Gary Sexton
-        </a>{' '}
-        for the pictures.
-      </footer>
+      
+        
+            
+<footer className="bg-white rounded-lg shadow dark:bg-black m-4">
+    <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div className="sm:flex sm:items-center sm:justify-between">
+            <a href="https://dianella.vercel.app/" className="flex items-center mb-4 sm:mb-0">
+                <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Dianella</span>
+            </a>
+            <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                <li>
+                    <a href="#" className="mr-4 hover:underline md:mr-6 ">Sobre mí</a>
+                </li>
+                <li>
+                    <a href="#" className="mr-4 hover:underline md:mr-6">Proyectos</a>
+                </li>
+                <li>
+                    <a href="#" className="mr-4 hover:underline md:mr-6 ">Instagram</a>
+                </li>
+                <li>
+                    <a href="#" className="hover:underline">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://dianella.vercel.app/" className="hover:underline">Dianella™</a>. Todos los derechos reservados.</span>
+    </div>
+</footer>
+
+
+
+      
     </>
   )
 }
